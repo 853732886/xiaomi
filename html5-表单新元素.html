@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>表单新元素</title>
+    <meta name="keywords" content="表单新元素">
+    <meta name="description" content="">
+
+</head>
+
+<body>
+    <form action="">
+        <!--   type:number==可以很方便的输入数字-->
+        数字：<input type="number" name="number">
+        <hr>
+        <!--    可以设置数字输入的最大值和最小值-->
+        <!--    可以设置步骤值-->
+        数字范围：<input type="range" min="0" max="100" step="5" name="num1">
+
+        <!--    url:输入网址-->
+        <hr> 网址：
+        <input type="url" name="url">
+        <hr> 手机：
+        <input type="tel" name="tel">
+        <hr>邮箱：
+        <!--        email:可以检查输入的内容是否符合要求-->
+        <input type="email" name="email">
+
+        <!--        日期-->
+        <hr> 日期：
+        <input type="date" name="date1">
+        <hr>时间：
+        <input type="time" name="time1">
+
+        <hr>日期时间：
+        <input type="datetime-local" name="datetime1">
+
+        <hr>星期：
+        <input type="week" name="week">
+
+
+
+        <input type="submit" value="确定">
+    </form>
+
+</body>
+
+</html>

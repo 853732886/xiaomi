@@ -1,0 +1,153 @@
+/*通用选择器*/
+
+
+/*把页面的外边距和元素的内边距都重置为0*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+.hqyjdiv {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #00FF00;
+    margin: 30px 60px 5px;
+}
+
+.hqyj2 {
+    width: 600px;
+    height: 30px;
+    border: 1px solid #FF0000;
+    margin: 0 auto;
+}
+
+
+/*标签选择器*/
+
+h1 {
+    color: mediumvioletred;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/*ID选择器样式定义格式*/
+
+#lione {
+    color: red;
+}
+
+
+/*class选择器定义格式*/
+
+licolor {
+    color: blue;
+}
+
+
+/*交叉选择器*/
+
+p.licolor {
+    color: red;
+}
+
+
+/*后代选择器*/
+
+
+/*空格找该标签下面的所有的子子孙孙*/
+
+li span {
+    color: green;
+}
+
+
+/*>只找儿子级别的*/
+
+li>span {
+    color: red;
+}
+
+li>em>span {
+    color: blue;
+}
+
+ul.head li.logo {
+    padding: 5px 0 0 20px;
+}
+
+
+/*后代选择器*/
+
+.cloud-box .cloud-list .cloud-link span {
+    color: firebrick;
+    line-height: 25px;
+    width: 210px;
+    padding-right: 8px;
+    display: block
+}
+
+a,
+span,
+li {
+    cursor: pointer;
+}
+
+
+/*群组选择器*/
+
+.wrap-fixed .head-wrap .qr,
+.wrap-fixed .qr,
+.wrap-fixed .search-hd {
+    /*    display: none;*/
+    color: red;
+}
+
+.adiv a {
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+
+/*定义A的默认样式*/
+
+.adiv a:link {
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+
+/*定义A的访问过的样式*/
+
+.adiv a:visited {
+    color: #aaaaaa;
+}
+
+
+/*定义A的鼠标移入时的样式*/
+
+.adiv a:hover {
+    color: green;
+    font-family: serif;
+    font-size: 35px;
+}
+
+.adiv:hover {
+    border: 1px solid #aaaaaa;
+    width: 100px;
+    height: 200px;
+}
+
+
+/*定义A的点击时的状态*/
+
+.adiv a:active {
+    color: blue;
+    font-size: 80px;
+}

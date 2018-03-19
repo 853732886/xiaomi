@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>常用CSS学习-浮动FLOAT</title>
+    <meta name="keywords" content="常用CSS学习-浮动FLOAT">
+    <meta name="description" content="">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*        定位完全脱离文档流*/
+        /*        相对定位：position: relative，是相对自身来定位的，原来所在的区域还是保留的*/
+        /*        支持：left,top,right,bottom,z-index*/
+        /*        默认的z-index是0，加上定位后z-index变成了1*/
+        /*        有定位属性的元素可以改变z-index*/
+        /*
+        div {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #div1 {
+            background-color: red;
+        }
+        
+        #div2 {
+            background-color: green;
+            position: relative;
+            left: 100px;
+            bottom: -50px;
+        }
+        
+        #div3 {
+            background-color: blue;
+            position: relative;
+            z-index: 2;
+        }
+        */
+        /*        绝对定位：position: absolute,是相对父级有定位属性的元素进行定位的，原来所在的区域将不在保留*/
+        /*        支持：left,top,right,bottom,z-index*/
+        /*        默认的z-index是0，加上定位后z-index变成了1*/
+        /*        有定位属性的元素可以改变z-index*/
+        /*
+        div {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #div1 {
+            background-color: red;
+        }
+        
+        #div2 {
+            background-color: green;
+            position: absolute;
+            left: -30px;
+            top: 80px;
+        }
+        
+        #div3 {
+            background-color: blue;
+        }
+        
+        .bigbox {
+            margin-top: 200px;
+            border: 2px solid blueviolet;
+            height: auto;
+            position: relative;
+        }
+        */
+        
+        .vancel {
+            width: 285px;
+            height: 510px;
+            border: 1px solid #e8e7ec;
+            margin: 50px;
+            position: relative;
+        }
+        
+        .vancel .ptitle {
+            font-family: "Microsoft YaHei";
+            font-size: 14px;
+            line-height: 28px;
+            height: 28px;
+            color: #333;
+            position: absolute;
+            left: 15px;
+            bottom: 20px;
+            font-weight: normal;
+        }
+        
+        .vancel .recharge {
+            font-family: Arial;
+            font-size: 14px;
+            line-height: 28px;
+            height: 28px;
+            color: #a10000;
+            position: absolute;
+            left: 165px;
+            bottom: 20px;
+            font-weight: normal;
+        }
+        
+        .vancel .price {
+            font-family: Arial;
+            font-size: 14px;
+            line-height: 28px;
+            height: 28px;
+            color: #a10000;
+            position: absolute;
+            right: 15px;
+            bottom: 20px;
+            font-weight: normal;
+        }
+        /*        固定定位：position: fixed,是相对BODY*/
+        /*        支持：left,top,right,bottom,z-index*/
+        
+        .positionfix {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: 600px;
+            height: 30px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+<div class="bigbox">
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+
+</div>
+-->
+
+    <!--    定位的综合应用-->
+    <div class="vancel">
+        <div>
+            <img src="images/christmas-bk04.jpg" alt="">
+        </div>
+
+        <div class="ptitle">弹力修身 小方领衬衫</div>
+        <div class="recharge">充值购买</div>
+        <div class="price">109元</div>
+
+    </div>
+
+    <div class="positionfix">固定定位</div>
+
+    <p style="height:3000px;">滚动条</p>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>表单学习</title>
+    <meta name="keywords" content="表单学习">
+    <meta name="description" content="">
+</head>
+
+<body>
+    <!--form:定义表单-->
+    <!--    action：指定处理数据的地址，可以用绝对地址和相对地址,也可以使用外网地址-->
+    <!--    method:数据传输方式，GET 和 POST，GET时数据会显示在地址栏里面，POST在底层处理，不会显示在地址栏里面-->
+    <!--    submit:把数据提交上去-->
+    <!--    reset:重置表单数据到初始状态，并不是简单的说清空表单数据-->
+    <!--    后台获取对应的name的值-->
+
+    <form action="http://localhost/getdata.php" method="post">
+        <!--       name:根据属性name里面的值获取value属性里面的值-->
+        <!--placeholder：文本输入信息提示-->
+        <!--        size:控制输入框显示的长度-->
+        <!--        maxlength:限制输入内容的长度-->
+        姓名：<input type="text" name="username" value="张三" placeholder="输入你的姓名" size="60" maxlength="6" /> <br>
+
+        <!--        radio：单选按钮，一组只能选中一个-->
+        <!--        name:相同的name是一组radio-->
+        <!--        checked:设置默认选中项-->
+        <hr> 性别：<input type="radio" name="sex" value="1" checked> 男生 <input type="radio" name="sex" value="2"> 女生
+
+        <!--       checkbox:复选框，一组可以选中多个选项-->
+        <!--        checked:设置默认选中项-->
+        <!--        name:命名成数组的形式，如 courses[]-->
+        <hr> 课程：
+        <input type="checkbox" name="course[]" value="H5" checked />H5
+        <input type="checkbox" name="course[]" value="PHP" />PHP
+        <input type="checkbox" name="course[]" value="JAVA" checked />JAVA
+
+        <hr> 学过的课程：
+        <input type="checkbox" name="coursed[]" value="H5" checked />H5
+        <input type="checkbox" name="coursed[]" value="PHP" />PHP
+        <input type="checkbox" name="coursed[]" value="JAVA" checked />JAVA
+
+
+        <hr>
+        <!--        select：选择列表，需要设置option选项-->
+        <!--        默认选中项加selected-->
+        <!--        select默认只能选择一个，通过设置multiple可以选中多个-->
+        <!--        size:能看到的选项数,和multiple是独立存在的，不是配对不出现-->
+        <select name="computure" multiple size="2">
+          <option value="">请选择你的设备</option>
+          <option value="1">台式机</option>
+          <option value="2" selected>笔记本</option>
+          <option value="3">平板</option>
+        </select>
+        <hr>
+        <!--        textarea:多行文本-->
+        <!--        cols：一行可以输入多少个字，实际就是输入文本框的宽度-->
+        <!--        rows：定义的是出现滚动条之前可以输入的行数，也就是文本框的高度-->
+        <!--        textarea没有value属性-->
+        <textarea name="info" id="" cols="30" rows="3">今天天气有点雾霾</textarea>
+
+        <hr>
+        <!--        type:password,密码信息，对用户来说是加密状态-->
+        <input type="password" name="passwd" size="12">
+
+
+        <!--       type=image 是图片提交按钮，src指定图片路径-->
+        <input type="image" src="image/submit.jpg">
+
+        <!--        button：普通按钮-->
+        <input type="button" value="检查信息输入完整性">
+
+        <input type="submit" value="确认" />
+        <input type="reset" value="重新填" />
+    </form>
+
+</body>
+
+</html>

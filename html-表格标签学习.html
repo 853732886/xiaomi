@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>表格学习</title>
+    <meta name="keywords" content="表格学习">
+    <meta name="description" content="">
+</head>
+
+<body>
+    <!--table:我里面要定义表格相关的东西-->
+    <!--    Tr:定义一行的-->
+    <!--    th：定义表格头列的-->
+    <!--    td：定义内容列-->
+    <!--    border:定义表格和他的所有列的边框-->
+    <!--    width:定义表格的宽度,height：定义高度-->
+    <!--    可以单独定义列的宽度-->
+    <!--    可以定义内容的对其方式:center,left,right-->
+    <!--    可以定义垂直方向的对齐方式：valign:top,middle,bottom-->
+    <!--    rowspan:可以合并多行为一行-->
+    <!--    colspan：合并多列为一列-->
+    <!--    bgcolor:指定对应的行或者列背景颜色-->
+    <!--    background:设置表格或者列的背景图片-->
+
+    <table border="1" width="800px" height="200px" style="border-collapse: collapse" background="./image/img1.jpg">
+        <tr>
+            <th width="60px">学号</th>
+            <th width="25%">姓名</th>
+            <th width="25%">电话</th>
+            <th width="">中奖次数</th>
+        </tr>
+
+        <tr align="center">
+            <td>1612001</td>
+            <td colspan="2" bgcolor="#999999">张军伟///15982037678</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">1612001</td>
+
+
+            <td rowspan="2" valign="top" align="center">3</td>
+
+        </tr>
+
+        <tr>
+            <td>1612001</td>
+            <td>张军伟</td>
+            <td>15999999999</td>
+        </tr>
+
+        <tr>
+            <td>1612001</td>
+            <td>张军伟</td>
+            <td>15982037678</td>
+            <td>3</td>
+        </tr>
+
+
+    </table>
+
+</body>
+
+</html>

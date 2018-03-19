@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>常用CSS学习-块元素和行级元素转换</title>
+    <meta name="keywords" content="常用CSS学习-文字">
+    <meta name="description" content="">
+    <style type="text/css">
+        /*        块元素：有宽度和高度*/
+        /*        行级元素：就像袋子一样，他的宽度是靠里面的东西撑起来的*/
+        /*        通过设置diplay改变显示方式:display: inline-block*/
+        
+        .div1 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            display: inline-block;
+        }
+        
+        .div2 {
+            width: 300px;
+            height: 300px;
+            background-color: green;
+            display: inline-block;
+        }
+        /*        行级元素转换成块级元素:display: block*/
+        
+        .menu a {
+            display: block;
+            width: 100px;
+            /*            border-bottom: 3px solid #FF0000;*/
+            float: left;
+            color: #727171;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            font-family: "Microsoft YaHei";
+            border-right: 1px solid #888;
+            line-height: 30px;
+        }
+        
+        .menu a:hover {
+            color: #a10000;
+            border-bottom: 3px solid #a10000;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--   strong:文字加粗-->
+
+    <div class="div1">
+
+
+    </div>
+
+    <div class="div2">
+
+
+    </div>
+
+    <div class="menu">
+        <a href="1">衬衣</a>
+        <a href="2">裤子</a>
+        <a href="3">男鞋</a>
+        <a href="4">女鞋</a>
+        <a href="5">羽绒服</a>
+
+    </div>
+
+</body>
+
+</html>

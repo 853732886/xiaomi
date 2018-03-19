@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>选择器学习</title>
+    <meta name="keywords" content="CSS优先级">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="选择器.css">
+</head>
+
+<body>
+    <!--通用选择器-->
+    <!--    作用域页面所有有定义的属性的元素-->
+    <div class="hqyjdiv">
+        华清教育集团
+    </div>
+
+    <div class="hqyj2">这是另外一个块</div>
+
+    <!--标签选择器-->
+    <h1>专业源于专注</h1>
+
+
+    <!--    ID选择器：根据ID选择要作用的对象-->
+    <!--    ID要保证唯一性，是不能重复的，一个标签只能使用独立的id，不能和其他标签id重复-->
+    <ul>
+        <li id="lione">华清成为NCIT中心人才培养基地</li>
+        <li>华清远见荣获腾讯网回响中国</li>
+        <li>研发中心为中科大建嵌入式实验室</li>
+    </ul>
+
+
+    <!--    class选择器：根据class选择CSS作用对象-->
+    <!--    class是可以重复使用的，多个标签可以使用同一个class-->
+    <ul>
+        <li class="licolor">华清成为NCIT中心人才培养基地</li>
+        <li class="licolor">华清远见荣获腾讯网回响中国</li>
+        <li class="licolor">研发中心为中科大建嵌入式实验室</li>
+    </ul>
+
+    <p class="licolor">您好，欢迎来到这里</p>
+
+    <!--    交叉选择器-->
+    <!--    注意：交叉选择器中间是没有空格的-->
+    <!--    是class为licolor的p标签-->
+    <!--    也可以是ID，如：p#licolor-->
+    <p class="licolor">
+        我这里是P标签的内容
+    </p>
+
+
+    <!--    后代选择器-->
+    <!--    注意：中间是有空格的，所有子子孙孙都要找到-->
+    <!--    注意：> 代表儿子，可以用>一级一级的往下找-->
+
+    <ul>
+        <li>华清成为NCIT中心人才培养基地<em>这是<span>第一条记录</span></em></li>
+        <li>华清远见荣获腾讯网回响中国<span>这是第二条记录</span></li>
+        <li>研发中心为中科大建嵌入式实验室</li>
+    </ul>
+
+    <!--    小总结下：ul.head li.logo  代表的是  class为head的ul后代的class为logo的li标签，对应下面的HTML代码结构-->
+    <ul class="head">
+        <li class="logo">这里是LOGO</li>
+    </ul>
+
+    <!--    元素和标签：标签加上自身属性和内容组成一个元素-->
+
+    <!--    标签组合理解：.cloud-box .cloud-list .cloud-link span，对应下面的HTML代码结构-->
+    <div class="cloud-box">
+        <div class="cloud-list">
+            <div class="cloud-link"><span>我都不知道自己在哪里了</span></div>
+        </div>
+    </div>
+
+    <!--    群组选择器-->
+    <!--    群组选择器中间用逗号隔开-->
+    <!--    群组选择器里面的成员可以是标签选择器、class选择器、ID选择器、后代选择器（包含子代>）、交叉选择器-->
+    <a>你好同学</a>
+    <hr>
+    <span>大家好，学习CSS</span>
+
+    <!--    .wrap-fixed .head-wrap .qr, .wrap-fixed .qr, .wrap-fixed .search-hd { display: none; } 对应下面的HTML代码结构-->
+
+    <div class="wrap-fixed">
+        <div class="head-wrap">
+            <div class="qr">这个是三层</div>
+        </div>
+    </div>
+
+
+    <div class="wrap-fixed">
+        <div class="qr">这个是两层</div>
+    </div>
+
+    <div class="wrap-fixed">
+        <div class="search-hd">这个也是两层</div>
+    </div>
+
+    <!--    伪类选择器-->
+    <!--    同时可以用在div和p标签上，常用的是hover-->
+    <!--    根据不同的状态改变样式-->
+    <!--    A标签状态：link,hover,active,visited,分别表示的是默认样式、鼠标移入样式、点击样式、访问过的样式-->
+    <!--CSS文件里面有不同状态的样式定义-->
+
+    <hr>
+    <div class="adiv">
+        <A href="http://hqyj.com" target="_blank">华清远见</A>
+    </div>
+
+
+    <!--不同选择器优先级参考：行内样式 > ID选择器 > Class选择器 >元素选择器-->
+
+
+
+</body>
+
+</html>

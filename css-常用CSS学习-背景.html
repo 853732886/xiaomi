@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>常用CSS学习-背景</title>
+    <meta name="keywords" content="常用CSS学习-背景">
+    <meta name="description" content="">
+    <style type="text/css">
+        body {
+            background-color: #f1f1f1;
+        }
+        
+        .bgcolor {
+            width: 600px;
+            height: 300px;
+            background-color: #00ff00;
+            opacity: 0.5;
+            filter: Alpha(opacity=10);
+        }
+        
+        .bgimage {
+            width: 150px;
+            height: 150px;
+            background-image: url(images/cats.png);
+            background-repeat: no-repeat;
+            border: 3px solid #FF0000;
+            background-position: -320px 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--背景颜色 background-color  -->
+    <!--背景颜色可以定义透明度opacity,取值范围0-1，值越小颜色越浅-->
+    <!--IE下定义透明度的方式： filter: Alpha(opacity=10); 取值范围是0-100，值越小颜色越浅-->
+    <div class="bgcolor"></div>
+    <!--    背景图片 background-image-->
+    <!--    url指定图片路径：绝对地址或相对地址-->
+    <!--    background-repeat：控制图片是否平铺，默认是平铺，可选值：no-repeat->不平铺，repeat-x:横向平铺，repeat-y:竖向平铺-->
+    <!--    background-position:给背景图片定位，各大网站用于整站的按钮制作等，能够有效的提高图片加载速度-->
+    <!--    background-position: -320px -10px，参数是左边距和上边距，可以是整数，也可以是负数-->
+    <!--    background-position非常重要，一定要理解,请参考淘宝的方式-->
+
+    <div class="bgimage">
+
+
+    </div>
+
+
+</body>
+
+</html>

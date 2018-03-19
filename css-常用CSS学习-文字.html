@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>常用CSS学习-文字</title>
+    <meta name="keywords" content="常用CSS学习-文字">
+    <meta name="description" content="">
+    <style type="text/css">
+        /*        font-family:定义字体，可以设置多个属性值，根据用户电脑上面的字体库，从前面依次选择*/
+        /*        font-size:字体的大小，单位有px 和 em，常用的是px(像素)*/
+        /*        text-indent:文字缩进，常用单文是em，是指缩进几个字，也可以使用单位px缩进*/
+        /*        text-decoration:定义文字下划线*/
+        /*        font-weight：定义文字粗细的*/
+        /*        color:定义字体颜色*/
+        /*        letter-spacing:定义文字间距*/
+        
+        .wordstyle {
+            font-family: 微软雅黑;
+        }
+        
+        .wordstyle span,
+        .wordstyle p {
+            font-size: 12px;
+        }
+        
+        .wordstyle p {
+            text-indent: 2em;
+            line-height: 25px;
+            color: #666;
+            letter-spacing: 5px;
+        }
+        
+        .wordstyle span {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--   strong:文字加粗-->
+
+    <div class="wordstyle">
+        <span>“回响中国”颁奖盛典隆重开幕</span>
+        <p>
+            12月1日，由腾讯网主办的“2016回响中国·腾讯网教育年度盛典”在北京隆重举行。盛典以“教育智变 重构未来”为主题，邀请教育界专家、名师以及全国重磅教育企业共聚一堂，对2016年教育领域的政策推进、事件剖析，从业者生存状态以及产业发展等方面进行全方位解读，力求推动教育行业健康有序的发展。华清远见教育集团总裁季久峰先生与众多教育名家共同出席本次“回响中国”年度盛典。
+        </p>
+
+    </div>
+
+</body>
+
+</html>
